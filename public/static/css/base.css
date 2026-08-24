@@ -1,0 +1,45 @@
+/* Custom Font: Libertinus Serif Display (used as a headline accent, see .home h1) */
+@font-face {
+    font-family: 'Libertinus_Serif_Display';
+    src: url('../Libertinus_Serif_Display/LibertinusSerifDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --brand-red: #f5292a;
+    --brand-red-dark: #dc2626;
+    --brand-red-darker: #b91c1c;
+    --brand-red-darkest: #991b1b;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Scroll offset for fixed navigation */
+html {
+    scroll-padding-top: 154px; /* Account for fixed navigation height */
+}

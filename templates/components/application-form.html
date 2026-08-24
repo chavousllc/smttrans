@@ -1,0 +1,152 @@
+<!-- Application Form Component -->
+<form class="application-form" id="driverApplication">
+    <!-- Personal Information -->
+    <div class="form-section">
+        <h3>Personal Information</h3>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="firstName">First Name <span class="required">*</span></label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name <span class="required">*</span></label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="address">Address <span class="required">*</span></label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="city">City <span class="required">*</span></label>
+                <input type="text" id="city" name="city" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="state">State <span class="required">*</span></label>
+                <input type="text" id="state" name="state" required>
+            </div>
+            <div class="form-group">
+                <label for="zipCode">ZIP Code <span class="required">*</span></label>
+                <input type="text" id="zipCode" name="zipCode" required>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Driving Information -->
+    <div class="form-section">
+        <h3>Driving Information</h3>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="licenseNumber">CDL License Number <span class="required">*</span></label>
+                <input type="text" id="licenseNumber" name="licenseNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="licenseState">License State <span class="required">*</span></label>
+                <input type="text" id="licenseState" name="licenseState" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="licenseExpiry">License Expiration <span class="required">*</span></label>
+                <input type="date" id="licenseExpiry" name="licenseExpiry" required>
+            </div>
+            <div class="form-group">
+                <label for="experience">Years of Driving Experience <span class="required">*</span></label>
+                <select id="experience" name="experience" required>
+                    <option value="">Select Experience</option>
+                    <option value="0-1">0-1 years</option>
+                    <option value="1-3">1-3 years</option>
+                    <option value="3-5">3-5 years</option>
+                    <option value="5-10">5-10 years</option>
+                    <option value="10+">10+ years</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="endorsements">CDL Endorsements</label>
+                <input type="text" id="endorsements" name="endorsements" placeholder="e.g., Hazmat, Tanker, Passenger">
+            </div>
+            <div class="form-group">
+                <label for="preferredRoutes">Preferred Routes</label>
+                <select id="preferredRoutes" name="preferredRoutes">
+                    <option value="">Select Preference</option>
+                    <option value="local">Local</option>
+                    <option value="regional">Regional</option>
+                    <option value="over-the-road">Over the Road</option>
+                    <option value="no-preference">No Preference</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Employment History -->
+    <div class="form-section">
+        <h3>Employment History</h3>
+        <div class="form-row single">
+            <div class="form-group">
+                <label for="currentEmployer">Current/Previous Employer</label>
+                <input type="text" id="currentEmployer" name="currentEmployer">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="employmentStart">Employment Start Date</label>
+                <input type="date" id="employmentStart" name="employmentStart">
+            </div>
+            <div class="form-group">
+                <label for="employmentEnd">Employment End Date</label>
+                <input type="date" id="employmentEnd" name="employmentEnd">
+            </div>
+        </div>
+        <div class="form-row single">
+            <div class="form-group">
+                <label for="reasonForLeaving">Reason for Leaving</label>
+                <textarea id="reasonForLeaving" name="reasonForLeaving" placeholder="Please explain your reason for leaving your previous position"></textarea>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Additional Information -->
+    <div class="form-section">
+        <h3>Additional Information</h3>
+        <div class="form-row single">
+            <div class="form-group">
+                <label for="availability">Availability <span class="required">*</span></label>
+                <select id="availability" name="availability" required>
+                    <option value="">Select Availability</option>
+                    <option value="immediate">Immediate</option>
+                    <option value="1-week">Within 1 week</option>
+                    <option value="2-weeks">Within 2 weeks</option>
+                    <option value="1-month">Within 1 month</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row single">
+            <div class="form-group">
+                <label for="additionalInfo">Additional Information</label>
+                <textarea id="additionalInfo" name="additionalInfo" placeholder="Tell us anything else you'd like us to know about your qualifications or experience"></textarea>
+            </div>
+        </div>
+    </div>
+    
+    <div class="submit-section">
+        <button type="submit" class="btn-apply">
+            <i class="fas fa-paper-plane"></i>
+            Submit Application
+        </button>
+    </div>
+</form>

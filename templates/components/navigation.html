@@ -1,0 +1,113 @@
+<!-- Navigation -->
+<nav class="navbar">
+    <!-- Top Section - Logo and Contact Info -->
+    <div class="navbar-top">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="/" class="logo-link">
+                    <img src="/static/images/logo.png" alt="SMT Trans LLC Logo" class="logo-image">
+                </a>
+            </div>
+            <div class="navbar-top-right">
+                <div class="language-dropdown">
+                    <button id="languageToggle" class="language-toggle" type="button" aria-label="Change language">
+                        <span class="lang-text">EN</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="languageOptions" class="language-options">
+                        <div class="language-option active" data-lang="en">
+                            <span class="flag">🇺🇸</span>
+                            <span class="lang-name">English</span>
+                        </div>
+                        <div class="language-option" data-lang="ru">
+                            <span class="flag">🇷🇺</span>
+                            <span class="lang-name">Русский</span>
+                        </div>
+                        <div class="language-option" data-lang="uz">
+                            <span class="flag">🇺🇿</span>
+                            <span class="lang-name">O'zbek</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    {% if site_settings.social_facebook %}
+                    <a href="{{ site_settings.social_facebook }}" target="_blank" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    {% endif %}
+                    {% if site_settings.social_linkedin %}
+                    <a href="{{ site_settings.social_linkedin }}" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    {% endif %}
+                    {% if site_settings.social_instagram %}
+                    <a href="{{ site_settings.social_instagram }}" target="_blank" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    {% endif %}
+                </div>
+                <div class="contact-info">
+                    {% if site_settings.contact_phone %}
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-details">
+                            <div class="contact-label">Phone Number</div>
+                            <div class="contact-value">
+                                <a href="tel:{{ site_settings.contact_phone_tel }}">{{ site_settings.contact_phone }}</a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if site_settings.contact_email %}
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-details">
+                            <div class="contact-label">Email Us</div>
+                            <div class="contact-value">
+                                <a href="mailto:{{ site_settings.contact_email }}">{{ site_settings.contact_email }}</a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bottom Section - Navigation Menu -->
+    <div class="navbar-bottom">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/#home" class="nav-link" data-en="Home" data-ru="Главная" data-uz="Bosh sahifa">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/#about" class="nav-link" data-en="About" data-ru="О нас" data-uz="Biz haqida">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/#services" class="nav-link" data-en="Services" data-ru="Услуги" data-uz="Xizmatlar">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/mechanics" class="nav-link" data-en="Mechanics" data-ru="Механика" data-uz="Mexanika">Mechanics</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/#fleet" class="nav-link" data-en="Fleet" data-ru="Автопарк" data-uz="Avtopark">Fleet</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/#contact" class="nav-link" data-en="Contact" data-ru="Контакты" data-uz="Aloqa">Contact</a>
+                </li>
+            </ul>
+            <div class="navbar-bottom-right">
+                <a href="/application" class="btn-apply">
+                    <i class="fas fa-user-tie"></i>
+                    <span>Apply Now</span>
+                </a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </div>
+</nav>

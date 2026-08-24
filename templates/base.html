@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>{% block title %}SMT Trans - Roaring Reliability, Driving Excellence{% endblock %}</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/navigation.css">
+    <link rel="stylesheet" href="/static/css/home.css">
+    <link rel="stylesheet" href="/static/css/sections.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+    <link rel="stylesheet" href="/static/css/animations.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">
+    
+    <!-- External Resources -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <!-- Navigation -->
+    {% include 'components/navigation.html' %}
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    {% include 'components/footer.html' %}
+
+    <!-- JavaScript Files -->
+    <script src="/static/js/translations.js"></script>
+    <script src="/static/js/script.js"></script>
+
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

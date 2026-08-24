@@ -1,0 +1,59 @@
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="/static/images/logo.png" alt="SMT Trans LLC Logo" class="footer-logo-image">
+                </div>
+                <p>Your trusted partner in transportation services. Delivering excellence across the nation.</p>
+                <div class="social-links">
+                    {% if site_settings.social_facebook %}
+                    <a href="{{ site_settings.social_facebook }}" target="_blank"><i class="fab fa-facebook"></i></a>
+                    {% endif %}
+                    {% if site_settings.social_instagram %}
+                    <a href="{{ site_settings.social_instagram }}" target="_blank"><i class="fab fa-instagram"></i></a>
+                    {% endif %}
+                    {% if site_settings.social_linkedin %}
+                    <a href="{{ site_settings.social_linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="/#services">Expedited Shipping</a></li>
+                    <li><a href="/#services">LTL & FTL</a></li>
+                    <li><a href="/#services">Warehousing</a></li>
+                    <li><a href="/#services">Cross-Country</a></li>
+                    <li><a href="/#services">Temperature-Controlled</a></li>
+                    <li><a href="/#services">Hazmat Transport</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="/#about">About Us</a></li>
+                    <li><a href="/#fleet">Our Fleet</a></li>
+                    <li><a href="/#contact">Contact</a></li>
+                    <li><a href="/application">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                {% if site_settings.contact_phone %}
+                <p><i class="fas fa-phone"></i> <a href="tel:{{ site_settings.contact_phone_tel }}" class="contact-link">{{ site_settings.contact_phone }}</a></p>
+                {% endif %}
+                {% if site_settings.contact_email %}
+                <p><i class="fas fa-envelope"></i> <a href="mailto:{{ site_settings.contact_email }}" class="contact-link">{{ site_settings.contact_email }}</a></p>
+                {% endif %}
+                {% if site_settings.contact_address %}
+                <p><i class="fas fa-map-marker-alt"></i> <a href="https://maps.google.com/?q={{ site_settings.contact_address|urlencode }}" target="_blank" class="contact-link">{{ site_settings.contact_address|replace('\n', '<br>')|safe }}</a></p>
+                {% endif %}
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; {{ current_year }} SMT Trans LLC. All rights reserved.</p>
+        </div>
+    </div>
+</footer>

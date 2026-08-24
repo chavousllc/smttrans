@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+instance/
+.env
+.env.local
+.vercel
+*.db
+.DS_Store
+venv/
+.venv/
