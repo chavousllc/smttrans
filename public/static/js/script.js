@@ -161,7 +161,7 @@ if (driverApplicationForm) {
             additionalInfo: formData.get('additionalInfo')
         };
 
-        const submitBtn = this.querySelector('.btn-apply');
+        const submitBtn = this.querySelector('.btn-submit-application');
         const originalHtml = submitBtn.innerHTML;
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
         submitBtn.disabled = true;

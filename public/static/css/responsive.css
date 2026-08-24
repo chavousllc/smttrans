@@ -8,16 +8,18 @@
         width: 250px;
     }
     
-    /* Hide top section elements on mobile */
-    .navbar-top-right {
+    /* Keep the language switcher reachable on mobile; the social links and
+       phone/email cards are dropped to save space (both are still available
+       in the footer, and the "Apply Now" CTA moves into the mobile menu below). */
+    .social-links,
+    .navbar .contact-info {
         display: none;
     }
-    
+
     .navbar-top .nav-container {
-        justify-content: center;
         height: 50px;
     }
-    
+
     .navbar-bottom .nav-container {
         height: 40px;
     }
@@ -31,9 +33,7 @@
         left: -100%;
         top: 90px; /* Adjusted for smaller navbar */
         flex-direction: column;
-        background: rgba(0, 0, 0, 0.98);
-        backdrop-filter: blur(20px) saturate(180%);
-        -webkit-backdrop-filter: blur(20px) saturate(180%);
+        background: #0a0a0a;
         width: 100%;
         text-align: center;
         transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -84,7 +84,19 @@
     }
     
     .btn-apply {
-        display: none; /* Hide Apply Now button on mobile */
+        display: none; /* the desktop pill button is replaced by .nav-item-apply below */
+    }
+
+    .nav-item-apply {
+        display: block;
+        margin-top: 0.5rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .nav-link-apply {
+        background: linear-gradient(135deg, var(--brand-red), var(--brand-red-dark));
+        color: #ffffff !important;
     }
 
     .home h1 {

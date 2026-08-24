@@ -259,6 +259,12 @@
     position: relative;
 }
 
+/* "Apply Now" appears as its own pill button (.btn-apply) on desktop;
+   this duplicate menu entry only shows on mobile, see responsive.css */
+.nav-item-apply {
+    display: none;
+}
+
 .nav-link {
     text-decoration: none;
     color: #ffffff;
