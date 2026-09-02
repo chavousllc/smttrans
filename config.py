@@ -44,6 +44,10 @@ SITE_SETTINGS = {
     'contact_phone_tel': '+12077701111',
     'contact_email': 'dispatch@smttrans.com',
     'contact_address': '10081 Sandmeyere Ln Unit 1\nPhiladelphia, PA 19116',
+    # Single-line form for Google Maps query URLs — the multi-line version above
+    # embeds a raw newline (rendered as %0A when urlencoded), which breaks Maps'
+    # address parsing.
+    'contact_address_line': '10081 Sandmeyere Ln Unit 1, Philadelphia, PA 19116',
     'contact_hours': '24/7 Dispatch Available',
     'social_facebook': '',
     'social_linkedin': '',

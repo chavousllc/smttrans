@@ -308,10 +308,38 @@
 {% endblock %}
 
 {% block content %}
+<section class="application-hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1 class="hero-title">Driver Application</h1>
+            <p class="hero-subtitle">Join our team of professional drivers and build your career with SMT Trans LLC.</p>
+            <div class="hero-features">
+                <div class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span>Competitive Pay & Benefits</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span>Modern, Well-Maintained Fleet</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span>Flexible Route Options</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="truck-animation">
+                <i class="fas fa-user-tie"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
 <div class="application-container">
     <!-- Application Header -->
     {% include 'components/application-header.html' %}
-    
+
     <!-- Application Form -->
     {% include 'components/application-form.html' %}
 </div>

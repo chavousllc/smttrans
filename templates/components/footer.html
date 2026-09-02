@@ -48,7 +48,7 @@
                 <p><i class="fas fa-envelope"></i> <a href="mailto:{{ site_settings.contact_email }}" class="contact-link">{{ site_settings.contact_email }}</a></p>
                 {% endif %}
                 {% if site_settings.contact_address %}
-                <p><i class="fas fa-map-marker-alt"></i> <a href="https://maps.google.com/?q={{ site_settings.contact_address|urlencode }}" target="_blank" class="contact-link">{{ site_settings.contact_address|replace('\n', '<br>')|safe }}</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> <a href="https://maps.google.com/?q={{ site_settings.contact_address_line|urlencode }}" target="_blank" class="contact-link">{{ site_settings.contact_address|replace('\n', '<br>')|safe }}</a></p>
                 {% endif %}
             </div>
         </div>

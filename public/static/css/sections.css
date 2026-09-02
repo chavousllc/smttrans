@@ -36,6 +36,7 @@
 .about-text h3 {
     color: #000000;
     font-size: 1.5rem;
+    font-weight: 600;
     margin-bottom: 1rem;
     margin-top: 2rem;
 }
@@ -323,7 +324,6 @@
     gap: 2rem;
 }
 
-#phone-number,
 .contact-item a {
     color: inherit; /* Inherit color from parent element */
     text-decoration: none; /* Remove the underline */
@@ -350,6 +350,7 @@
 .contact-item h3 {
     color: #000000;
     font-size: 1.1rem;
+    font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
@@ -416,71 +417,3 @@
     min-height: 120px;
 }
 
-/* Custom Sections */
-.custom-section {
-    padding: 4rem 0;
-    background: white;
-}
-
-.custom-section:nth-child(even) {
-    background: #f8fafc;
-}
-
-.custom-section .section-header {
-    margin-bottom: 3rem;
-}
-
-.custom-section .section-header h2 {
-    font-size: 2.25rem;
-    font-weight: 700;
-    color: #1e293b;
-    margin-bottom: 1rem;
-}
-
-.custom-section .section-header p {
-    font-size: 1.1rem;
-    color: #64748b;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.custom-section .section-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.custom-section .section-text {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #4b5563;
-    margin-bottom: 2rem;
-}
-
-.custom-section .section-text p {
-    margin-bottom: 1.5rem;
-}
-
-.custom-section .content-placeholder {
-    margin-top: 2rem;
-    padding: 2rem;
-    background: #f1f5f9;
-    border-radius: 8px;
-    border: 2px dashed #cbd5e1;
-    text-align: center;
-    color: #64748b;
-}
-
-/* Responsive Design for Custom Sections */
-@media (max-width: 768px) {
-    .custom-section {
-        padding: 3rem 0;
-    }
-    
-    .custom-section .section-header h2 {
-        font-size: 1.75rem;
-    }
-    
-    .custom-section .section-text {
-        font-size: 1rem;
-    }
-}

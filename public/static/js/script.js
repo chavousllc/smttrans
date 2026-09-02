@@ -360,25 +360,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Add smooth reveal animation for sections
-const revealSections = document.querySelectorAll('.about, .services, .fleet, .contact');
-
-const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
-    });
-}, { threshold: 0.1 });
-
-revealSections.forEach(section => {
-    section.style.opacity = '0';
-    section.style.transform = 'translateY(50px)';
-    section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
-    revealObserver.observe(section);
-});
-
 // Add active state to navigation links based on scroll position
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section[id]');
@@ -613,29 +594,6 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Enhanced scroll animations
-function addScrollAnimations() {
-    const animatedElements = document.querySelectorAll('.stat-item, .service-card, .fleet-card, .contact-item');
-    
-    const animationObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry, index) => {
-            if (entry.isIntersecting) {
-                setTimeout(() => {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }, index * 100);
-            }
-        });
-    }, { threshold: 0.1 });
-    
-    animatedElements.forEach(element => {
-        element.style.opacity = '0';
-        element.style.transform = 'translateY(30px)';
-        element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        animationObserver.observe(element);
-    });
-}
-
 // Add typing animation for main heading
 function typeWriter(element, text, speed = 100) {
     let i = 0;
@@ -754,7 +712,6 @@ document.head.appendChild(rippleStyle);
 
 // Initialize all animations when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    addScrollAnimations();
     addFloatingAnimation();
     addGlowEffect();
     addRippleEffect();
