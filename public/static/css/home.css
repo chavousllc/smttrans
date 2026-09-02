@@ -1,6 +1,8 @@
 /* Home Section */
 .home {
-    height: 100vh;
+    /* min-height (not height) so short/landscape viewports grow the section
+       to fit its content instead of clipping the CTA buttons off-screen */
+    min-height: calc(100vh - 154px);
     display: flex;
     align-items: center;
     position: relative;
@@ -8,6 +10,7 @@
     color: white;
     overflow: hidden;
     margin-top: 154px; /* Account for exact navbar height */
+    padding: 3rem 0;
 }
 
 .home-content {
