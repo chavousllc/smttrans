@@ -22,11 +22,11 @@ const translations = {
         
         // About Section
         'about-title': 'About SMT Trans LLC',
-        'about-subtitle': 'Your reliable partner in transportation since 2010',
+        'about-subtitle': 'Your reliable partner in transportation since 2020',
         'our-story': 'Our Story',
         'our-mission': 'Our Mission',
         'our-values': 'Our Values',
-        'about-story-text': 'SMT Trans LLC has been delivering excellence in transportation services for over a decade. We started with a single truck and a dream to provide the best transportation solutions to businesses across the nation.',
+        'about-story-text': 'SMT Trans LLC has been delivering excellence in transportation services since November 3, 2020. We started with a single truck and a dream to provide the best transportation solutions to businesses across the nation.',
         'about-mission-text': 'To provide safe, reliable, and efficient transportation services while maintaining the highest standards of customer service and operational excellence.',
         'safety-first': 'Safety First:',
         'reliability': 'Reliability:',
@@ -117,11 +117,11 @@ const translations = {
         
         // About Section
         'about-title': 'О компании SMT Trans LLC',
-        'about-subtitle': 'Ваш надежный партнер в транспортировке с 2010 года',
+        'about-subtitle': 'Ваш надежный партнер в транспортировке с 2020 года',
         'our-story': 'Наша история',
         'our-mission': 'Наша миссия',
         'our-values': 'Наши ценности',
-        'about-story-text': 'SMT Trans LLC уже более десяти лет предоставляет отличные транспортные услуги. Мы начали с одного грузовика и мечты предоставить лучшие транспортные решения для предприятий по всей стране.',
+        'about-story-text': 'SMT Trans LLC предоставляет отличные транспортные услуги с 3 ноября 2020 года. Мы начали с одного грузовика и мечты предоставить лучшие транспортные решения для предприятий по всей стране.',
         'about-mission-text': 'Предоставлять безопасные, надежные и эффективные транспортные услуги, поддерживая высочайшие стандарты обслуживания клиентов и операционного совершенства.',
         'safety-first': 'Безопасность прежде всего:',
         'reliability': 'Надежность:',
@@ -212,11 +212,11 @@ const translations = {
         
         // About Section
         'about-title': 'SMT Trans LLC haqida',
-        'about-subtitle': '2010 yildan beri transportda ishonchli hamkoringiz',
+        'about-subtitle': '2020 yildan beri transportda ishonchli hamkoringiz',
         'our-story': 'Bizning hikoyamiz',
         'our-mission': 'Bizning vazifamiz',
         'our-values': 'Bizning qadriyatlarimiz',
-        'about-story-text': 'SMT Trans LLC o\'n yildan ortiq vaqt davomida transport xizmatlarida ajoyib natijalarni taqdim etmoqda. Biz bitta yuk mashinasi va butun mamlakat bo\'ylab korxonalarga eng yaxshi transport yechimlarini taqdim etish orzusidan boshladik.',
+        'about-story-text': 'SMT Trans LLC 2020-yil 3-noyabrdan beri transport xizmatlarida ajoyib natijalarni taqdim etmoqda. Biz bitta yuk mashinasi va butun mamlakat bo\'ylab korxonalarga eng yaxshi transport yechimlarini taqdim etish orzusidan boshladik.',
         'about-mission-text': 'Mijozlarga xizmat ko\'rsatish va operatsion mukammallikning eng yuqori standartlarini saqlagan holda xavfsiz, ishonchli va samarali transport xizmatlarini taqdim etish.',
         'safety-first': 'Xavfsizlik birinchi o\'rinda:',
         'reliability': 'Ishonchlilik:',
