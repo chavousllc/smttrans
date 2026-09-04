@@ -594,26 +594,6 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Add typing animation for main heading
-function typeWriter(element, text, speed = 100) {
-    let i = 0;
-    element.innerHTML = '';
-    const typingId = Symbol();
-    element._typingId = typingId;
-
-    function type() {
-        // Stop if something else (e.g. a language switch) replaced the content mid-animation
-        if (element._typingId !== typingId) return;
-        if (i < text.length) {
-            element.innerHTML += text.charAt(i);
-            i++;
-            setTimeout(type, speed);
-        }
-    }
-
-    type();
-}
-
 // Add floating animation to elements
 function addFloatingAnimation() {
     const floatingElements = document.querySelectorAll('.service-icon, .fleet-image');
@@ -715,13 +695,4 @@ document.addEventListener('DOMContentLoaded', () => {
     addFloatingAnimation();
     addGlowEffect();
     addRippleEffect();
-    
-    // Add typing animation to main heading after a delay
-    setTimeout(() => {
-        const mainHeading = document.querySelector('.home h1');
-        if (mainHeading) {
-            const originalText = mainHeading.textContent;
-            typeWriter(mainHeading, originalText, 50);
-        }
-    }, 1000);
 });

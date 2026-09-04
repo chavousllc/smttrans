@@ -13,7 +13,24 @@
     padding: 3rem 0;
 }
 
+/* Legibility scrim: darkens the left side (where the text sits) against
+   the busy photo behind it; fades out toward the right so the truck stays
+   visible. (.home-overlay in the markup is scoped to just the decorative
+   right-hand pattern and can't cover this, so this uses its own layer.) */
+.home::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.35) 40%, rgba(0, 0, 0, 0.05) 75%);
+    z-index: 1;
+}
+
 .home-content {
+    /* Flex items don't grow to fill available space by default (width:auto
+       shrinks to content), so without an explicit width this never reached
+       its max-width and sat in a cramped, off-center-looking column on
+       anything wider than ~1000px. */
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
