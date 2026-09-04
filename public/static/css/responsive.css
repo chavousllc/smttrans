@@ -18,13 +18,35 @@
         font-size: 0.75rem;
         gap: 0.5rem;
     }
+
+    /* Extra breathing room for the hero text panel at this pinch point,
+       on top of dropping the diagonal edge (see home.css, >1100px only). */
+    .home-text-panel {
+        width: 66%;
+    }
 }
 
 @media (max-width: 768px) {
-    /* Mobile navbar is shorter (~90px total) than desktop's 154px */
+    /* Mobile navbar is shorter (~90px total) than desktop's 154px.
+       The desktop split (58%-wide diagonal text panel next to a photo
+       panel) doesn't work at narrow widths, so stack a shorter photo band
+       above a full-width, non-angled text panel instead. */
     .home {
         margin-top: 90px;
-        min-height: calc(100vh - 90px);
+        min-height: auto;
+    }
+
+    .home-image-panel {
+        position: relative;
+        inset: auto;
+        height: 220px;
+    }
+
+    .home-text-panel {
+        width: 100%;
+        min-height: auto;
+        clip-path: none;
+        padding: 2.5rem 1.5rem;
     }
 
     .logo-image {
