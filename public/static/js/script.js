@@ -388,10 +388,9 @@ let currentLanguage = 'en';
 function switchLanguage(lang) {
     currentLanguage = lang;
     
-    // Update any statically-translated element (nav links, hero eyebrow, etc.)
-    document.querySelectorAll('[data-en]').forEach(el => {
-        const value = el.getAttribute(`data-${lang}`);
-        if (value) el.textContent = value;
+    // Update navigation links
+    document.querySelectorAll('.nav-link[data-en]').forEach(link => {
+        link.textContent = link.getAttribute(`data-${lang}`);
     });
     
     // Update language toggle button
