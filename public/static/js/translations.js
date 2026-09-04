@@ -10,7 +10,7 @@ const translations = {
         
         // Home Section
         'home-title': 'Professional Transportation Services',
-        'home-subtitle': 'Your trusted partner for reliable, safe, and efficient transportation solutions across the nation.',
+        'home-subtitle': 'Your trusted partner for reliable, safe, and efficient transportation solutions nationwide. Our experienced team and modern fleet ensure your cargo arrives on time, every time.',
         'get-quote': 'Get Quote',
         'our-services': 'Apply Now',
         
@@ -105,7 +105,7 @@ const translations = {
         
         // Home Section
         'home-title': 'Профессиональные транспортные услуги',
-        'home-subtitle': 'Профессиональные грузоперевозки по всей стране с надежностью, безопасностью и эффективностью в основе всего, что мы делаем.',
+        'home-subtitle': 'Ваш надёжный партнёр в сфере безопасных и эффективных грузоперевозок по всей стране. Наша опытная команда и современный автопарк гарантируют, что ваш груз прибудет вовремя, каждый раз.',
         'get-quote': 'Получить предложение',
         'our-services': 'Подать заявку',
         
@@ -200,7 +200,7 @@ const translations = {
         
         // Home Section
         'home-title': 'Professional transport xizmatlari',
-        'home-subtitle': 'Millat bo\'ylab ishonchlilik, xavfsizlik va samaradorlik asosida professional yuk tashish xizmatlari.',
+        'home-subtitle': 'Butun mamlakat bo\'ylab ishonchli, xavfsiz va samarali transport yechimlari bo\'yicha hamkoringiz. Tajribali jamoamiz va zamonaviy avtoparkimiz yukingiz har doim o\'z vaqtida yetib borishini kafolatlaydi.',
         'get-quote': 'Taklif oling',
         'our-services': 'Ariza topshirish',
         
