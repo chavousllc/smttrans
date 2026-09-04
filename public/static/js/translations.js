@@ -21,7 +21,7 @@ const translations = {
         'service-available': 'Service Available',
         
         // About Section
-        'about-title': 'About SMT Trans LLC',
+        'about-title': 'About SMT Trans',
         'about-subtitle': 'Your reliable partner in transportation since 2020',
         'our-story': 'Our Story',
         'our-mission': 'Our Mission',
@@ -116,7 +116,7 @@ const translations = {
         'service-available': 'Доступность услуг',
         
         // About Section
-        'about-title': 'О компании SMT Trans LLC',
+        'about-title': 'О компании SMT Trans',
         'about-subtitle': 'Ваш надежный партнер в транспортировке с 2020 года',
         'our-story': 'Наша история',
         'our-mission': 'Наша миссия',
@@ -211,7 +211,7 @@ const translations = {
         'service-available': 'Xizmat mavjud',
         
         // About Section
-        'about-title': 'SMT Trans LLC haqida',
+        'about-title': 'SMT Trans haqida',
         'about-subtitle': '2020 yildan beri transportda ishonchli hamkoringiz',
         'our-story': 'Bizning hikoyamiz',
         'our-mission': 'Bizning vazifamiz',

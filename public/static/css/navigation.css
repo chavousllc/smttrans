@@ -493,22 +493,28 @@ body:has(.application-container) .btn-apply i {
 }
 
 .language-toggle {
-    background: none;
-    border: none;
+    /* Same button shape/hover pattern as .nav-link, adapted for the light
+       top bar (nav-link's version below lives on the dark bottom bar). */
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 10px;
     color: var(--text-heading);
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
     display: flex;
     align-items: center;
-    gap: 5px;
-    font-size: 1rem;
-    padding: 0;
+    gap: 6px;
+    font-size: 0.85rem;
+    letter-spacing: 0.3px;
+    padding: 0.55rem 0.9rem;
     position: relative;
 }
 
 .language-toggle:hover {
     color: var(--brand-red);
+    background: rgba(245, 41, 42, 0.08);
+    border-color: rgba(245, 41, 42, 0.25);
 }
 
 .language-toggle i {

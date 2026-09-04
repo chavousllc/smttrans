@@ -1,6 +1,7 @@
 /* Footer */
 .footer {
-    background: #1e293b;
+    /* Same gradient as the navbar's dark bar, just without its transparency/blur */
+    background: linear-gradient(135deg, #000000, #1a1a1a);
     color: white;
     padding: 4rem 0 2rem;
 }
@@ -15,6 +16,13 @@
 .footer-logo-image {
     height: 150px;
     width: auto;
+    /* The logo is black line art (plus a red accent line) on a transparent
+       background, which nearly disappears against the footer's dark
+       background. invert() flips black->white but would also turn the red
+       line cyan; hue-rotate(180deg) rotates that cyan back to red while
+       leaving black/white (which have no hue) unaffected. The nav/header
+       keep the original black-on-white version as-is. */
+    filter: invert(1) hue-rotate(180deg);
 }
 
 .footer-section h3,
@@ -87,12 +95,15 @@
 .footer-bottom {
     border-top: 1px solid #374151;
     padding-top: 2rem;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
     color: #9ca3af;
 }
 
 .powered-by {
-    margin-top: 0.5rem;
     font-size: 0.85rem;
 }
 
