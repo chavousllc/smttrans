@@ -108,7 +108,7 @@
 }
 
 .powered-by a {
-    color: #9ca3af;
+    color: #cbd5e1; /* matches .footer-section p / the Contact Info text */
     text-decoration: none;
     transition: color 0.3s ease;
 }
