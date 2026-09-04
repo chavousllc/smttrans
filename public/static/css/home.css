@@ -38,23 +38,6 @@
     position: relative;
 }
 
-/* Contained card for the hero copy — previously the text just sat directly
-   on the photo, so it read as unstructured and could cross over whatever
-   happened to be behind it (the truck's cab/window) at a given screen size.
-   A solid, defined panel fixes both: it gives the content a real boundary,
-   and stays legible regardless of what's in the photo behind it. */
-.home-panel {
-    max-width: 680px;
-    background: rgba(8, 8, 8, 0.62);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-left: 4px solid var(--brand-red);
-    border-radius: 16px;
-    padding: 2.75rem 3rem;
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
-}
-
 .home h1 {
     font-family: 'Libertinus_Serif_Display', serif;
     font-size: 3.5rem;
