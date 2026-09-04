@@ -38,6 +38,16 @@
     position: relative;
 }
 
+.home-eyebrow {
+    display: inline-block;
+    color: var(--brand-red);
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
 .home h1 {
     font-family: 'Libertinus_Serif_Display', serif;
     font-size: 3.5rem;
