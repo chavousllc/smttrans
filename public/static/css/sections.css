@@ -28,9 +28,9 @@
 
 .about-content {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 4rem;
-    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    align-items: start;
 }
 
 .about-text h3 {
@@ -69,19 +69,6 @@
     left: 0;
     color: var(--brand-red);
     font-weight: bold;
-}
-
-.about-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-logo {
-    width: 300px;
-    height: auto;
-    max-width: 100%;
-    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
 }
 
 /* Services Section */

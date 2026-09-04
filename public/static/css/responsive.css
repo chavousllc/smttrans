@@ -30,11 +30,7 @@
     .logo-image {
         height: 70px;
     }
-    
-    .about-logo {
-        width: 250px;
-    }
-    
+
     /* Keep the language switcher reachable on mobile; the social links and
        phone/email cards are dropped to save space (both are still available
        in the footer, and the "Apply Now" CTA moves into the mobile menu below). */
@@ -180,11 +176,7 @@
     .logo-image {
         height: 45px;
     }
-    
-    .about-logo {
-        width: 200px;
-    }
-    
+
     .home h1 {
         font-size: 2rem;
     }
