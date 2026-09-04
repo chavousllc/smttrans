@@ -7,17 +7,6 @@
                     <img src="/static/images/logo-white.png" alt="SMT Trans LLC Logo" class="footer-logo-image">
                 </div>
                 <p>Your trusted partner in transportation services. Delivering excellence across the nation.</p>
-                <div class="social-links">
-                    {% if site_settings.social_facebook %}
-                    <a href="{{ site_settings.social_facebook }}" target="_blank"><i class="fab fa-facebook"></i></a>
-                    {% endif %}
-                    {% if site_settings.social_instagram %}
-                    <a href="{{ site_settings.social_instagram }}" target="_blank"><i class="fab fa-instagram"></i></a>
-                    {% endif %}
-                    {% if site_settings.social_linkedin %}
-                    <a href="{{ site_settings.social_linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    {% endif %}
-                </div>
             </div>
             <div class="footer-section">
                 <h4>Services</h4>
@@ -50,6 +39,17 @@
                 {% if site_settings.contact_address %}
                 <p><i class="fas fa-map-marker-alt"></i> <a href="https://maps.google.com/?q={{ site_settings.contact_address_line|urlencode }}" target="_blank" class="contact-link">{{ site_settings.contact_address|replace('\n', '<br>')|safe }}</a></p>
                 {% endif %}
+                <div class="social-links">
+                    {% if site_settings.social_facebook %}
+                    <a href="{{ site_settings.social_facebook }}" target="_blank"><i class="fab fa-facebook"></i></a>
+                    {% endif %}
+                    {% if site_settings.social_instagram %}
+                    <a href="{{ site_settings.social_instagram }}" target="_blank"><i class="fab fa-instagram"></i></a>
+                    {% endif %}
+                    {% if site_settings.social_linkedin %}
+                    <a href="{{ site_settings.social_linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    {% endif %}
+                </div>
             </div>
         </div>
         <div class="footer-bottom">
