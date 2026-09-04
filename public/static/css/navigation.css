@@ -169,14 +169,14 @@
 .navbar .contact-label {
     font-size: 0.8rem;
     font-weight: 600;
-    color: #374151;
+    color: var(--text-strong);
     line-height: 1.2;
 }
 
 .navbar .contact-value {
     font-size: 0.9rem;
     font-weight: 500;
-    color: #6b7280;
+    color: var(--text-muted);
     line-height: 1.2;
 }
 
@@ -495,7 +495,7 @@ body:has(.application-container) .btn-apply i {
 .language-toggle {
     background: none;
     border: none;
-    color: #000000;
+    color: var(--text-heading);
     font-weight: 500;
     cursor: pointer;
     transition: color 0.3s ease;

@@ -7,13 +7,13 @@
 .section-header h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #000000;
+    color: var(--text-heading);
     margin-bottom: 1rem;
 }
 
 .section-header p {
     font-size: 1.1rem;
-    color: #64748b;
+    color: var(--text-muted);
     max-width: 600px;
     margin: 0 auto;
 }
@@ -34,7 +34,7 @@
 }
 
 .about-text h3 {
-    color: #000000;
+    color: var(--text-heading);
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
@@ -47,7 +47,7 @@
 
 .about-text p {
     margin-bottom: 1.5rem;
-    color: #4b5563;
+    color: var(--text-body);
     line-height: 1.7;
 }
 
@@ -58,7 +58,7 @@
 
 .about-text li {
     padding: 0.5rem 0;
-    color: #4b5563;
+    color: var(--text-body);
     position: relative;
     padding-left: 1.5rem;
 }
@@ -126,14 +126,14 @@
 }
 
 .service-card h3 {
-    color: #000000;
+    color: var(--text-heading);
     font-size: 1.5rem;
     margin-bottom: 1rem;
     font-weight: 600;
 }
 
 .service-card p {
-    color: #64748b;
+    color: var(--text-muted);
     line-height: 1.6;
     margin-bottom: 1.5rem;
 }
@@ -204,14 +204,14 @@
 }
 
 .fleet-card h3 {
-    color: #000000;
+    color: var(--text-heading);
     font-size: 1.5rem;
     margin-bottom: 1rem;
     font-weight: 600;
 }
 
 .fleet-card p {
-    color: #64748b;
+    color: var(--text-muted);
     margin-bottom: 1.5rem;
     line-height: 1.6;
 }
@@ -223,7 +223,7 @@
 
 .fleet-card li {
     padding: 0.5rem 0;
-    color: #4b5563;
+    color: var(--text-body);
     border-bottom: 1px solid rgba(245, 41, 42, 0.1);
     transition: all 0.3s ease;
 }
@@ -282,7 +282,7 @@
 
 .stat-description {
     font-size: 1rem;
-    color: #6b7280;
+    color: var(--text-muted);
     font-weight: 500;
     margin: 0;
 }
@@ -348,14 +348,14 @@
 }
 
 .contact-item h3 {
-    color: #000000;
+    color: var(--text-heading);
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
 .contact-item p {
-    color: #64748b;
+    color: var(--text-muted);
     margin: 0;
 }
 

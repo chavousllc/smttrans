@@ -12,6 +12,14 @@
     --brand-red-dark: #dc2626;
     --brand-red-darker: #b91c1c;
     --brand-red-darkest: #991b1b;
+
+    /* Neutral text tiers — previously three near-identical grays
+       (#64748b/#4b5563/#6b7280) were used interchangeably for the same
+       "muted" role across different files with no shared system. */
+    --text-heading: #1a1a1a; /* headings — matches the body's own base color below */
+    --text-strong: #374151;  /* form labels, nav links */
+    --text-body: #4b5563;    /* longer-form reading copy (about text, list items) */
+    --text-muted: #64748b;   /* subtitles, card descriptions, secondary text */
 }
 
 /* Reset and Base Styles */
@@ -24,7 +32,7 @@
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.6;
-    color: #1a1a1a;
+    color: var(--text-heading);
     overflow-x: hidden;
 }
 
