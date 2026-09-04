@@ -97,7 +97,7 @@
 }
 
 .powered-by {
-    font-size: 0.85rem;
+    font-size: 1rem; /* matches the "All rights reserved" line's default size */
 }
 
 .powered-by a {
