@@ -50,6 +50,6 @@ SITE_SETTINGS = {
     'contact_address_line': '10081 Sandmeyere Ln Unit 1, Philadelphia, PA 19116',
     'contact_hours': '24/7 Dispatch Available',
     'social_facebook': '',
-    'social_linkedin': '',
-    'social_instagram': '',
+    'social_linkedin': 'https://www.linkedin.com/company/smttrans',
+    'social_instagram': 'https://www.instagram.com/smttrans',
 }
