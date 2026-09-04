@@ -49,6 +49,10 @@ SITE_SETTINGS = {
     # address parsing.
     'contact_address_line': '10081 Sandmeyere Ln Unit 1, Philadelphia, PA 19116',
     'contact_hours': '24/7 Dispatch Available',
+    # Dedicated line for scheduling service at the mechanics shop, separate
+    # from the general dispatch number above.
+    'mechanics_phone': '(215) 965-1111',
+    'mechanics_phone_tel': '+12159651111',
     'social_facebook': '',
     'social_linkedin': 'https://www.linkedin.com/company/smttrans',
     'social_instagram': 'https://www.instagram.com/smttrans',
