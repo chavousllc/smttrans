@@ -90,3 +90,18 @@
     text-align: center;
     color: #9ca3af;
 }
+
+.powered-by {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+}
+
+.powered-by a {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.powered-by a:hover {
+    color: var(--brand-red);
+}
